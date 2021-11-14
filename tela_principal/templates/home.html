@@ -8,7 +8,7 @@ Home
 {% block 'body' %}
 <div class="container">
 <br>
-<h1 class="teste">teste</h1>
+<h1 class="teste">BEM VINDO A ÁREA DE INTERAÇÃO COM O CONDOMÍNIO</h1>
 <div class="card text-center">
   <div class="card-header">
     <ul class="nav nav-pills card-header-pills">
@@ -49,9 +49,11 @@ Home
       <p style="margin-left: 50px;">{{i.comentario}}</p>
       <hr>
     {% endfor %}
-  </div>
+    
 </div>
- 
+
+<br>
+<br>
 </div>
 <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 <script>
@@ -73,6 +75,7 @@ function envia_comentario(){
                 div_comentario.innerHTML = ""
                 for(i=0; i < resposta['comentarios'].length; i++){
                   console.log('teste')
+                  
                   div_comentario.innerHTML += '<h5 style="display: inline;">'+ resposta['comentarios'][i][0] +'</h5>'
                   div_comentario.innerHTML += '<p style="margin-left: 50px;">' + resposta['comentarios'][i][1] + '</p>'
                   div_comentario.innerHTML += '<hr>'
