@@ -15,12 +15,6 @@
         <a class="navbar-brand" href="{% url 'sair'%}">&nbsp&nbspSair</a>
         
     </nav>
-    <nav class="footer fixed-bottom navbar-dark bg-dark">
-      <a class="navbar-brand" href="http://www.planalto.gov.br/ccivil_03/leis/l4591.htm">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspLei nº 4.591</a>
-      <a class="navbar-brand" href="{% url 'home'%}">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspCondomínio das Palmeiras</a>
-      <a class="navbar-brand" href="mailto:palmeiras.condominio.adm@gmail.com">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspFale Conoso</a>
-    
-    </nav>
     
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" ></script>
@@ -28,4 +22,19 @@
       
    
   </body>
+  <footer>
+    <footer class="text-center navbar-dark bg-dark">
+      <nav class="row">
+        <nav class="col-md-4">
+          <a class="navbar-brand" href="http://www.planalto.gov.br/ccivil_03/leis/l4591.htm">Lei nº 4.591</a>
+        </nav>
+        <nav class="col-md-4">
+          <a class="navbar-brand" href="{% url 'home'%}">Condomínio das Palmeiras</a>
+        </nav>
+        <nav class="col-md-4">
+          <a class="navbar-brand" href="mailto:palmeiras.condominio.adm@gmail.com">Fale Conoso</a>
+        </nav>
+      </nav>
+    </footer>
+  </footer> 
 </html>

@@ -6,7 +6,7 @@ Avisos
 
 {% block 'body' %}
 
-<div class="container">
+<div class="container" style="min-height:82vh">
     <!DOCTYPE html>
     <html>
         <head>
@@ -16,8 +16,9 @@ Avisos
           <h1>{{aviso.nome}}</h1>
           <p>Click <a href="{{aviso.avisos.url}}">aqui</a> para visualizar o PDF.</p>
         </body>
-      </html>
-      <div>
+    </html>
+      
 
 </div>
+<br>
 {% endblock %}
